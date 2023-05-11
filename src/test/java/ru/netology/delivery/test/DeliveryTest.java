@@ -34,7 +34,6 @@ class DeliveryTest {
         // generateName(locale), generatePhone(locale) для генерации и получения в тесте соответственно города,
         // имени и номера телефона без создания пользователя в методе generateUser(String locale) в датагенераторе
 
-        open("http://localhost:9999");
         DataGenerator.UserInfo userInfo = validUser;
         $("[data-test-id=city] input").setValue(userInfo.getCity());                                            //заполнение поля город
         $("[data-test-id=date] input").doubleClick().sendKeys(Keys.DELETE);                                     //очистка поля дата
